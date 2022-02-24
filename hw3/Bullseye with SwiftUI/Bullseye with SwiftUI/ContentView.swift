@@ -13,7 +13,10 @@ struct ContentView: View {
     
     @State var num: Double = 50
     
+    @State var toggle = false
+    
     var body: some View {
+        
         VStack() {
             HStack() {
                 VStack() {
@@ -32,13 +35,29 @@ struct ContentView: View {
             }
                     
             Spacer()
+            
+            
             VStack() {
+                
                 Text("Move the slider to: ").font(.system(size: 30.0))
-                Text(String(num)).font(.system(size: 30.0))
+                Text("25").font(.system(size: 30.0))
                 Slider(value: $num, in: 0...100)
+                
             }
+            
+            .padding(.leading, 20)
+            
+            .padding(.trailing, 20)
+            
             Spacer()
             Spacer()
+            
+            VStack {
+                Text("Exact Mode?")
+                Toggle("", isOn: $toggle)
+                    .padding(.trailing, 170)
+            }
+            
         }
         .padding (.top, 20)
     }
