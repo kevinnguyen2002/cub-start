@@ -1,8 +1,8 @@
 //
 //  FeedbackModel.swift
-//  waitlisthelper-skeleotn
+//  waitlisthelper-skeleton
 //
-//  Created by Jordan Yee on 1/19/22.
+//  Created by Kevin Nguyen on 3/2/22.
 //
 
 import Foundation
